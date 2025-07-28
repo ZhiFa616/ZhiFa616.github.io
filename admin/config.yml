@@ -2,6 +2,8 @@ backend:
   name: ZhiFa616
   repo: ZhiFa616/ZhiFa616.github.io
   branch: main
+  base_url: https://api.netlify.com
+auth_endpoint: oauth
 
 media_folder: "source/images/uploads"
 public_folder: "/images/uploads"
