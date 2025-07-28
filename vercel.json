@@ -1,0 +1,16 @@
+{
+  "builds": [
+    {
+      "src": "core/wsgi.py",
+      "use": "@vercel/python",
+      "config": { "runtime": "python3.12" }
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "(.*)",
+      "destination": "core/wsgi.py"
+    }
+  ],
+  "trailingSlash": true
+}
