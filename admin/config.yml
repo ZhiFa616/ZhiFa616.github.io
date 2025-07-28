@@ -1,0 +1,21 @@
+backend:
+  name: ZhiFa616
+  repo: ZhiFa616/ZhiFa616.github.io
+  branch: main
+
+media_folder: "source/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "posts"
+    label: "文章"
+    folder: "source/_posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "日期", name: "date", widget: "datetime"}
+      - {label: "内容", name: "body", widget: "markdown"}
+include:
+  - admin/config.yml
+
